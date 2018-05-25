@@ -20,20 +20,21 @@ var artist =[
   }
 ];
 
-for(var i = 0); i < artist.length; i++) {
+for (var i = 0; i < artist.length; i++) {
     var myLi = document.createElement("li");
     var myDiv = document.createElement("div");
     var myH1 = document.createElement("h1");
-    var myP = document.createElement("p");
-    var myP2 = document.createElement("p");
+    var myP = document.createElement("P");
+    var myP2 = document.createElement("p2");
 
         myH1.innerText= artist[i].singer;
         myP.innerText= artist[i].song;
         myP2.innerText= artist[i].genre;
 
         myDiv.appendChild(myH1);
-        myDiv.appendChild(myp);
-        myDiv.appendChild(myp2);
+        myDiv.appendChild(myP);
+        myDiv.appendChild(myP2);
+        
 
         myDiv.className = "col-6 text-center p-5";
 
